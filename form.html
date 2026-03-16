@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form类别型的标签可以用来创建表单，表单是用户输入数据并提交到服务器的界面。
+     常见的表单元素包括
+     文本输入框、密码输入框、电子邮件输入框、下拉菜单、单选按钮和复选框等。 -->
+    <form action="">
+        昵称：<input type="text" name=""><br>
+        密码：<input type="password" name=""><br>
+        <!-- passweord可以隐藏输入的内容 -->
+        邮箱：<input type="email" name="">
+        <select name="" id="">
+            <option value="">qq.com</option>
+            <option value="">163.com</option>
+            <option value="">126.com</option>
+        </select><br>
+       <!-- select可以搞出复选框 -->
+        性别:<input type="radio" name="gender" checked>男
+        <!-- checked属性可以默认选中某个单选框 -->
+        <input type="radio" name="gender" >女
+        <!-- radio的name属性相同，表示它们是一组单选框，用户只能选择其中一个。 -->
+        <br>
+        爱好:<input type="checkbox" name="hobby" >唱
+        <input type="checkbox" name="hobby" >跳
+        <input type="checkbox" name="hobby" >rap
+        <input type="checkbox" name="hobby" >篮球
+        <!-- checkbox的name属性相同，表示它们是一组复选框，用户可以选择其中一个或多个。 -->
+         <br>
+         个人简介:<br>
+         <textarea name="" id="" cols="30" rows="10"></textarea><br>
+         上传个人照片:<br>
+         <input type="file" name=""><br>
+         <hr>
+         <center>
+            <input type="submit" value="立即注册">
+        </center>   
+    </form>
+    
+</body>
+</html>
