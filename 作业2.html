@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>动态日期显示</title>
+</head>
+
+<body>
+    <script>
+        // 获取当前日期
+        var now = new Date();
+        
+        // 年
+        var year = now.getFullYear();
+        
+        // 月（注意 getMonth 返回 0~11，所以要 +1）
+        var month = now.getMonth() + 1;
+        
+        // 日
+        var day = now.getDate();
+
+        var weekdays = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+        var dateString = "今天是" + year + "年" + month + "月" + day + "日 " + weekdays[now.getDay()];
+        document.write(dateString);
+    </script>
+</body>
+
+</html>
