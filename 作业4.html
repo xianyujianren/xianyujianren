@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>统计与数据科学学院</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .head {
+            background-color: #00aeff;
+            height: 80px;
+        }
+
+        .content {
+            background-color: #f5f5f5;
+        }
+
+        .footer {
+            background-color: #adadad;
+            height: 80px;
+            margin-top: 10px;
+            clear: both;
+        }
+
+        .head>.container {
+            background-color: #0044ff;
+            height: 80px;
+        }
+
+        .footer>.container {
+            background-color: #242424;
+            height: 80px;
+        }
+
+        .content>.container {
+            /* background-color: #838383; */
+        }
+
+        .left {
+            width: 690px;
+            background-color: #ff5d5d;
+            float: left;
+            height: 800px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .right {
+            width: 260px;
+            background-color: #86ff86;
+            float: right;
+            height: 200px;
+            margin-top: 10px;
+        }
+
+        @media (max-width:960px) {
+            .container {
+                width: 100%;
+            }
+            .right {
+                width: 95%;
+                margin: 10px auto;
+                float: none;
+            }
+            .left {
+                width: 95%;
+                margin: 10px auto;
+                float: none;
+            }
+            #the2{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="container">统计与数据科学学院</div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="left">
+                <!-- 左侧色块内添加文字：通知公告 + 品牌活动 -->
+                <div style="padding: 20px; color: white; line-height: 1.6;">
+                    <h2 style="margin-top:0;">通知公告</h2>
+                    <ul style="margin-bottom: 30px;">
+                        <li>2025年暑期社会实践招募通知</li>
+                        <li>数据科学研讨会征稿启事</li>
+                        <li>毕业论文答辩安排</li>
+                        <li>奖学金评选结果公示</li>
+                    </ul>
+                    <h2>品牌活动</h2>
+                    <ul>
+                        <li>统计建模大赛</li>
+                        <li>数据科学训练营</li>
+                        <li>“访万企，读中国”实践</li>
+                        <li>统信大讲堂</li>
+                        <li>学风建设表彰大会</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div style="padding: 20px; color: #1e2a3a; line-height: 1.6;">
+                    <h3 style="margin-top:0;">学子风采</h3>
+                    <ul>
+                        <li>国奖获得者：李思源</li>
+                        <li>统计建模大赛一等奖</li>
+                        <li>保研复旦大学优秀学子</li>
+                        <li>Kaggle银牌团队</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right" id="the2">
+                <div style="padding: 20px; color: #1e2a3a; line-height: 1.6;">
+                    <h3 style="margin-top:0;">精彩影像</h3>
+                    <ul>
+                        <li>学院揭牌仪式回顾</li>
+                        <li>2024万企总结视频</li>
+                        <li>表彰大会快剪</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">统计与数据科学学院 · 地址：上海市松江区文翔路1900号</div>
+    </div>
+</body>
+
+</html>
