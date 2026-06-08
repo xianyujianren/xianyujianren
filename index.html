@@ -1,78 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xianyujianren</title>
+    <title>俞浩然 · 个人主页</title>
     <style>
-        h1,.center {
-            text-align: center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        a {
-            text-decoration: none;
-            color: rgb(65, 9, 122);
+        body {
+            background: #0f172a;
+            font-family: 'Segoe UI', Roboto, '微软雅黑', sans-serif;
+            color: #e2e8f0;
+            padding: 20px;
+        }
+        .video-box {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            background: black;
+        }
+        .video-box iframe {
+            width: 100%;
+            height: 500px;
+            display: block;
+            border: none;
+        }
+        .card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #1e293b;
+            border-radius: 28px;
+            padding: 28px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            color: #facc15;
+            margin-bottom: 20px;
         }
         h2 {
-            background-color: rgb(131, 46, 216);
-            line-height: 40px;
-            padding: 0 0 0 10px;
-            color: white;
-            border-radius: 5px;
-            box-shadow: 5px 10px 10px rgb(7, 4, 9);
+            background: #f97316;
+            display: inline-block;
+            padding: 5px 18px;
+            border-radius: 30px;
+            font-size: 1.25rem;
+            margin: 20px 0 15px;
+            color: #0f172a;
         }
-        .content {
-            width: 500px;
+        .info-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            margin: 10px 0;
+        }
+        .info-list li {
+            background: #0f172a;
+            padding: 6px 18px;
+            border-radius: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #0f172a;
+            border-radius: 16px;
+            overflow: hidden;
+            margin: 12px 0;
+        }
+        th, td {
+            border: 1px solid #334155;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #f97316;
+            color: #0f172a;
+        }
+        a {
+            color: #facc15;
+            text-decoration: none;
+        }
+        .center {
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            display: block;
             margin: 0 auto;
+            border: 2px solid #facc15;
+            transition: 0.2s;
         }
-
+        img:hover {
+            transform: scale(1.02);
+        }
+        hr {
+            margin: 20px 0;
+            border-color: #334155;
+        }
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+        @media (max-width: 700px) {
+            .video-box iframe {
+                height: 280px;
+            }
+            .card {
+                padding: 18px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="content"><h1>俞浩然的个人简历</h1>
-    <a href="https://space.bilibili.com/402432066?spm_id_from=333.1007.0.0">
-        <div class="center"><img src="图片.jpg" alt="啥也没有", width="300" height="300"></div> 
-    </a>
-    <br>
-    <div class="center">
-        <span>(点击</span>
-        <a href="https://space.bilibili.com/402432066?spm_id_from=333.1007.0.0">图片</a>
-        <span>进入我的B站主页)</span>
-    </div>
-    
-    
-    <hr height="2px" color="black">
-    <h2>个人简介</h2>
-    <ul>
-        <li><b>性别：</b>男</li>
-        <li><b>学校：</b>上海对外经贸大学</li>
-        <li><b>年龄：</b>20岁</li>
-        <li><b>邮箱：</b>xianyujianren@163.com</li> 
-    </ul>
-    <hr height="2px" color="black">   
-    <h2>技能</h2>
-    <div class="center">
-        <table border="1"  width="100%" cellspacing="0" cellpadding="0" >
-        <tr>
-            <th>年限</th>
-            <th>水平</th>
-            <th>项目</th>
-        </tr>
-        <tr>
-            <td>两年半</td>
-            <td>熟练掌握</td>
-            <td>唱跳    rap    篮球</td>
-        </tr>
-    </table>
-    </div>
-    
-    <h2>工作经验</h2>
-    <ol>
-        <li>2020.09 - 2021.06：唱  跳    rap    篮球</li>
-        <li>2021.09 - 2022.06：唱  跳    rap    篮球</li>
-        <li>2022.09 - 2023.06：唱  跳    rap    篮球</li>
-    </ol>
 
+<div class="video-box">
+    <iframe 
+        src="https://player.bilibili.com/player.html?bvid=BV1Sd4y1U7Rj&page=1&autoplay=0&muted=0"
+        scrolling="no" 
+        frameborder="0" 
+        allowfullscreen="true" 
+        allow="autoplay; encrypted-media">
+    </iframe>
+    <div style="color:#ccc; text-align:center; padding:6px; background:#000; font-size:13px;">点击播放按钮观看视频，声音正常。</div>
 </div>
-    
+
+<div class="card">
+    <h1>俞浩然的简历</h1>
+
+    <a href="https://space.bilibili.com/402432066" target="_blank">
+        <img src="图片.jpg" alt="头像" width="140" height="140" onerror="this.src='https://placehold.co/140x140?text=Yu'">
+    </a>
+    <div class="center">
+        <span>(点击图片进入B站主页)</span>
+    </div>
+
+    <hr>
+
+    <h2>个人简介</h2>
+    <ul class="info-list">
+        <li><strong>性别：</strong>男</li>
+        <li><strong>学校：</strong>上海对外经贸大学</li>
+        <li><strong>年龄：</strong>20岁</li>
+        <li><strong>邮箱：</strong>xianyujianren@163.com</li>
+    </ul>
+
+    <hr>
+
+    <h2>技能</h2>
+    <table>
+        <thead>
+            <tr><th>年限</th><th>水平</th><th>项目</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>两年半</td><td>熟练掌握</td><td>唱跳 rap 篮球</td></tr>
+        </tbody>
+    </table>
+
+    <h2>工作经验</h2>
+    <ol style="margin-left: 1.5rem;">
+        <li>2020.09 - 2021.06：唱跳 rap 篮球</li>
+    </ol>
+</div>
+
+<footer>姬霓太美 · 个人主页</footer>
+
 </body>
 </html>
