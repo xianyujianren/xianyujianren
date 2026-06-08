@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作业(JavaScript)</title>
+</head>
+
+<body>
+    <script>
+        document.write("题一:<br>");
+        var n = 7; 
+        var mid = Math.floor(n / 2);
+        for (var i = 0; i < n; i++) {
+            var stars = 1 + 2 * (mid - Math.abs(mid - i));
+            var dashes = (n - stars) / 2;
+            var line = "-".repeat(dashes) + "*".repeat(stars);
+            document.write(line + "<br>");
+        }
+        document.write("<br>");
+
+        document.write("题二:<br>");
+        for (var i = 1; i <= 9; i++) {
+            var row = "";
+            for (var j = 1; j <= i; j++) {
+                row += j + " * " + i + " = " + (j * i) + "    ";
+            }
+            document.write(row + "<br>");
+        }
+        document.write("<br>");
+
+
+        document.write("题三:<br>");
+        var str = "Rome was not built in a day";
+        var words = str.split(' ');
+        document.write('原字符串：' + str + "<br>");
+        document.write("单词数量：" + words.length + "<br><br>");
+
+
+        document.write("题四:<br>");
+        var original = "Hello Lvye";
+        document.write('原字符串：' + original + "<br>");
+        document.write("删除所有e: " + original.replace('e', '') + "<br><br>");
+
+
+        document.write("题五:<br>");    
+        var example = "abcde";
+        document.write("原字符串：" + example + "<br>");
+        document.write("反转结果：" + example.split("").reverse().join("") + "<br>");
+    </script>
+</body>
+
+</html>
